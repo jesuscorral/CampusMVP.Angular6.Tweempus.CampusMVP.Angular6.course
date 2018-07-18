@@ -1,13 +1,21 @@
-import { TweempusTwimpListComponent } from './twimp/tweempus-twimp-list/tweempus-twimp-list.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { TwimpService } from './twimp/twimp.service';
+import { AuthorService } from './author/author.service';
+
 import { TwimpCardComponent } from './twimp/twimp-card/twimp-card.component';
+import { AuthorCardComponent } from './author/author-card/author-card.component';
+import { TwimpListComponent } from './twimp/twimp-list/twimp-list.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
-  declarations: [TwimpCardComponent, TweempusTwimpListComponent],
-  exports: [TwimpCardComponent, TweempusTwimpListComponent]
+  declarations: [TwimpCardComponent, TwimpListComponent, AuthorCardComponent],
+  providers: [TwimpService, AuthorService],
+  exports: [TwimpCardComponent, TwimpListComponent, AuthorCardComponent, RouterModule]
 })
 export class SharedModule { }
