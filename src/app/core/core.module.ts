@@ -1,3 +1,4 @@
+import { AuthenticationService } from './authentication.service';
 import { AuthGuardService } from './auth-guard.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -12,7 +13,7 @@ import { RouterModule } from '../../../node_modules/@angular/router';
     RouterModule,
     HttpClientModule
   ],
-  providers: [AuthGuardService],
+  providers: [AuthGuardService, AuthenticationService],
   declarations: [HeaderComponent, NavComponent],
   exports: [HeaderComponent, NavComponent]
 })
