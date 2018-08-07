@@ -11,16 +11,7 @@
       "image": "https://randomuser.me/api/portraits/men/82.jpg"
     }
   ],
-  "authenticated": [
-    {
-      "id": "425BL1533578407119",
-      "author": "1"
-    },
-    {
-      "id": "555661533578823314",
-      "author": "1"
-    }
-  ],
+  "authenticated": [],
   "twimps": [
     {
       "id": "Mx5Cf1483389903318",
@@ -40,29 +31,21 @@
   "author-favorites": [
     {
       "id": "1",
-      "twimps": [
-        "T4qdo1483390015454"
-      ]
+      "twimps": ["T4qdo1483390015454"]
     },
     {
       "id": "2",
-      "twimps": [
-        "Mx5Cf1483389903318"
-      ]
+      "twimps": ["Mx5Cf1483389903318"]
     }
   ],
   "author-twimps": [
     {
       "id": "1",
-      "twimps": [
-        "Mx5Cf1483389903318"
-      ]
+      "twimps": ["Mx5Cf1483389903318"]
     },
     {
       "id": "2",
-      "twimps": [
-        "T4qdo1483390015454"
-      ]
+      "twimps": ["T4qdo1483390015454"]
     }
   ]
 }

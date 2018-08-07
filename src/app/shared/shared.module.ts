@@ -6,8 +6,8 @@ import { TwimpService } from './twimp/twimp.service';
 import { AuthorService } from './author/author.service';
 
 import { TwimpCardComponent } from './twimp/twimp-card/twimp-card.component';
-import { AuthorCardComponent } from './author/author-card/author-card.component';
 import { TwimpListComponent } from './twimp/twimp-list/twimp-list.component';
+import { AuthorCardComponent } from './author/author-card/author-card.component';
 
 @NgModule({
   imports: [

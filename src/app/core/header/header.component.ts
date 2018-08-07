@@ -1,6 +1,6 @@
-import { AuthenticationService } from './../authentication.service';
 import { Component } from '@angular/core';
-import { LoginRoutingModule } from '../../login/login-routing.module';
+
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'tweempus-header',
@@ -8,16 +8,17 @@ import { LoginRoutingModule } from '../../login/login-routing.module';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  constructor(private authService: AuthenticationService) { }
-    
-    checkLogin() {
-      if(this.authService.token != null) {
-        return true;
-      }
-      return false;
-      }
 
-      logOut() {
-        this.authService.logout();
-      }
+  constructor(private authService: AuthenticationService) {}
+
+  checkLogin() {
+    if(this.authService.token != null) {
+      return true;
+    }
+    return false;
+  }
+
+  logOut() {
+    this.authService.logout();
+  }
 }
